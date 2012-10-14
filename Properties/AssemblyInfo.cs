@@ -6,21 +6,21 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("JParser")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("JSON Parsing Library & High-level wrapper for Json.NET library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("JParser")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCopyright("Copyright © Rahil Parikh  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2053cea4-2685-453c-ad6b-178b90a34c12")]
+[assembly: Guid("6a007065-1cfa-4d44-b07e-67a31836e588")]
 
 // Version information for an assembly consists of the following four values:
 //
