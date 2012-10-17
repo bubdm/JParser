@@ -1,7 +1,7 @@
 ﻿/*
  *  Project     : JParser
  *  File        : JParser.cs
- *  Developer   : Rahil Parikh ( rahil@rahilparikh.me )
+ *  Developer   : Rahil Parikh ( rahil (@t) rahilparikh (d0t) me )
  *  Date        : Oct 14, 2012
  *  
  *  Copyright (c) 2012, Rahil Parikh
@@ -44,7 +44,7 @@ namespace JParser
     /// wrapper for Json.Net library and 
     /// extends existing functionality
     /// </summary>
-    sealed public class JParser
+    sealed public class JParse
     {
         Dictionary<string, string> dict;
         List<string> keys;
@@ -77,17 +77,17 @@ namespace JParser
         }
 
         /// <summary>
-        /// Gets the element at <para>Index</para>th location
+        /// Gets the key at <para>Index</para>th location
         /// </summary>
-        /// <param name="Index">Zero based index of element to get</param>
-        /// <returns>Returns element value or, if not found, <code>null</code></returns>
+        /// <param name="Index">Zero based index of element</param>
+        /// <returns>Returns key or, if not found, <code>null</code></returns>
         public string this[int Index]
         {
             get
             {
-                if (keys.Count > 0)
+                if (keys.Count > 0 && (Index >= 0 && Index < keys.Count))
                 {
-                    return dict[keys[Index]];
+                    return keys[Index];
                 }
                 return null;
             }
@@ -110,7 +110,7 @@ namespace JParser
         /// </summary>
         /// <param name="JsonString">Json string that needs to be processed</param>
         /// <param name="Delim">Specifies the delimiter to use during Dictionary processing. If omitted, '_' ( underscore ) will be used as a default delimiter.</param>
-        public JParser(string JsonString, char Delim = '_')
+        public JParse(string JsonString, char Delim = '_')
         {
             try
             {
